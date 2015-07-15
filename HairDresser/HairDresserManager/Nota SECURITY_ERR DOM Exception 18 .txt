@@ -1,0 +1,3 @@
+Ver:
+
+http://stackoverflow.com/questions/16062591/security-err-dom-exception-18-when-opening-database-in-webview

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html manifest="HairDresserDatabase.manifest">
+<!-- Obs: O manifest indicado acima, server para guardar os arquivos contidos dentro dele no 
+     cache da maquina, assim a pagina pode ser executada normalmente, mesno que em off-line -->
+   <head>
+   	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   	  <meta name="viewport" content="width=480; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <title>Hair Dresser Manager</title>	  
+      <script type="text/javascript" src="HairDresserDatabase.js" ></script>
+   <style>
+ 	body { font-family:Verdana, Geneva, sans-serif; font-size:14px; }
+   </style>      
+      
+   </head>
+    <body onload="onInit()">
+      <form name="itemForm">
+      <div align="left" style="border:1px solid green; width:300px">
+	     <h3>Agenda de Clientes:</h3>
+    		<p hidden>
+			<label for="CodCliente">CodCliente:</label><input type="text" name="CodCliente" id="CodCliente" size=2 disabled="true"/></p>
+	    	<label for="Nome">Nome:</label><input type="text" name="Nome" id="Nome" size=40/>
+		    <p><label for="telefone">Telefone</label><input type="text" name="Telefone" id="Telefone" size=15 /></P>
+			<br>
+    		<br>
+			<div align="center">
+    		<input type="button" name="create"   value="Novo" onclick="onCreate()" />
+    		<input type="button" name="update"   value="Alterar" onclick="onUpdate()" />
+    		<input type="button" name="delete"   value="Excluir" onclick="onDelete()" />
+			</div>
+			<br>
+			<br>				
+            <h3>Lista de Clientes:</h3>
+			<div style="height:200px; overflow-y: scroll; border:1px solid blue;">
+                 <ul  id="itemData" style="cursor:pointer;"></ul>
+			</div>
+			
+			<div style="font-weight: bold" align="center" id="status"></div>
+			
+		</div>	
+      </form>
+   </body>
+   <script>document.body.style.zoom="110%"</script>
+</html>

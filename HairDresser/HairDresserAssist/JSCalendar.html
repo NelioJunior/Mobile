@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="YahooFunctions.js"></script>
+	<link rel="stylesheet" href="EstiloNoturno.css">
+</head>
+<body>
+
+<script type="text/javascript">
+
+YUI().use('calendar', 'datatype-date', 'cssbutton',  function(Y) {
+
+    var calendar = new Y.Calendar({
+      contentBox: "#mycalendar",
+      width:'340px',
+      showPrevMonth: true,
+      showNextMonth: true,
+      date: new Date()}).render();
+
+    var dtdate = Y.DataType.Date;
+
+    calendar.on("selectionChange", function (ev) {
+
+    var newDate = ev.newSelection[0];  
+	  
+    hoje = newDate
+    dia = hoje.getDate()
+    mes = hoje.getMonth()
+    ano = hoje.getFullYear()
+    if (dia < 10)
+       dia = "0" + dia
+    if (ano < 2000)
+       ano = "19" + ano
+	  
+	window.AppInventor.setWebViewString((mes+1)+"/"+dia+"/"+ano);
+	  
+    });
+
+    Y.one("#togglePrevMonth").on('click', function (ev) {
+      ev.preventDefault();
+      calendar.set('showPrevMonth', !(calendar.get("showPrevMonth")));
+    });
+
+    Y.one("#toggleNextMonth").on('click', function (ev) {
+      ev.preventDefault();
+      calendar.set('showNextMonth', !(calendar.get("showNextMonth")));
+    });
+});
+
+document.body.style.zoom="85%"
+
+</script>
+
+<div class="yui3-skin-noite"> 
+     <div id="mycalendar"></div>
+</div>
+
+</body>
+</html>
+
