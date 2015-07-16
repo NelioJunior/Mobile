@@ -111,7 +111,7 @@ function onCreate(){
             });
         } 
         catch (e) {
-            updateStatus("Erro: INSERT não realizado " + e + ".");
+            updateStatus("Erro: insert não realizado " + e + ".");
         }
     }
 }
@@ -195,17 +195,16 @@ function updateStatus(status){
 
 function createTables(){
 
-		var script  = "PRAGMA foreign_keys = ON;$";  
-		    script += "CREATE TABLE if not exists Cliente (CodCliente INTEGER PRIMARY KEY AUTOINCREMENT ,Nome VARCHAR(50) NOT NULL ,Telefone VARCHAR(15) NOT NULL ,CaminhoImagem VARCHAR(45) NULL) ;$"; 
+		var script = "CREATE TABLE if not exists Cliente (CodCliente INTEGER PRIMARY KEY AUTOINCREMENT ,Nome VARCHAR(50) NOT NULL ,Telefone VARCHAR(15) NOT NULL ,CaminhoImagem VARCHAR(45) NULL);$"; 
             script += "CREATE TABLE if not exists Servico(CodServico INTEGER PRIMARY KEY AUTOINCREMENT ,Nome VARCHAR(50) NOT NULL ,Descricao VARCHAR(100) NULL ,CaminhoImagem VARCHAR(45) NULL ,Preco DOUBLE NOT NULL ,Desconto DOUBLE NULL);$";
             script += "CREATE TABLE if not exists Profissional (CodProfissional INTEGER PRIMARY KEY AUTOINCREMENT ,Nome VARCHAR(50) NOT NULL ,CaminhoImagem VARCHAR(45) NULL);$";
             script += "CREATE TABLE if not exists Agenda (CodServico INT ,CodProfissional INT NOT NULL ,CodCliente INT NOT NULL,DataHora DATETIME NOT NULL,FOREIGN KEY(CodCliente) REFERENCES CLIENTE(CodCliente),FOREIGN KEY(CodProfissional) REFERENCES PROFISSIONAL(CodProfissional),FOREIGN KEY(CodServico) REFERENCES SERVICO(CodServico));$";  
-			script += "CREATE TABLE if not exists ServicoProfissional (CodServico INTEGER NOT NULL ,  CodProfissional INTEGER NOT NULL ,  CONSTRAINT IdxServicoProfissional  FOREIGN KEY (CodServico) REFERENCES servico (CodServico),  FOREIGN KEY (CodProfissional)  REFERENCES profissional (CodProfissional));$";  
-			
+			script += "CREATE TABLE if not exists ServicoProfissional (CodServico INTEGER NOT NULL ,  CodProfissional INTEGER NOT NULL ,  CONSTRAINT IdxServicoProfissional  FOREIGN KEY (CodServico) REFERENCES servico (CodServico),  FOREIGN KEY (CodProfissional)  REFERENCES profissional (CodProfissional));";  
+
 			try {
-                var queries = script.split("$");
+                var queries = script.split("$");    
 				
-				for( var i = 0; i < queries.length; i++ ) {					
+				for( var i = 0; i < queries.length; i++ ) {		
 				    criar(queries[i]);
             	 }   
 				updateStatus("Criacao das tabelas OK");

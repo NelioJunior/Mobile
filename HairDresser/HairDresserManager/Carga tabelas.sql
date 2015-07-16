@@ -1,5 +1,7 @@
 -- Carga das tabelas do sistema Hairdresser 
---                                           Nelio Júnior - Junho/2015
+-- Dica, crio que o comando 'PRAGMA foreign_keys = ON;' no create das tabelas não é necessário.
+--       mas é muito necessario em processos "CRUDs"
+--                                                                   Nelio Júnior - Junho/2015
 delete from cliente; 
 insert into cliente(nome, telefone, CaminhoImagem) values('Josie and the Pussycats', '+55 11 9998 5645', 'Não definido') ;
 insert into cliente(nome, telefone, CaminhoImagem) values('Penelope Charmosa', '+55 21 9934 2323', 'Não definido') ;
@@ -28,7 +30,7 @@ insert into profissional(nome)  values('Urso Fonzie');
 -- Select * from profissional ;
 
 delete from ServicoProfissional;
-insert into ServicoProfissional(CodServico, CodProfissional) values(1,5) ;
+insert into ServicoProfissional(CodServico, CodProfissional) values(1,4) ;
 
 PRAGMA foreign_keys = ON;
 -- select * from ServicoProfissional;  

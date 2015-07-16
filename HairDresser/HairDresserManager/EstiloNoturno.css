@@ -254,9 +254,6 @@ body {
     text-align: center;
 }
 
-
-
-
 .yui3-skin-noite .yui3-calendar-weekday {
     font-weight: bold;
     background: {{weekdayHeadBackground}};
