@@ -207,7 +207,6 @@ function createTables(){
 				for( var i = 0; i < queries.length; i++ ) {		
 				    criar(queries[i]);
             	 }   
-				updateStatus("Criacao das tabelas OK");
             }
         catch (e) {
                updateStatus("Erro: Criacao das tabelas: " + e + ".");

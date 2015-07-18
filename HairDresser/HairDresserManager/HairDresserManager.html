@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html manifest="HairDresserDatabase.manifest">
+<!-- Obs: O manifest indicado acima, server para guardar os arquivos contidos dentro dele no 
+     cache da maquina, assim a pagina pode ser executada normalmente, mesno que em off-line -->
+   <head>
+   	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	  <meta name="viewport" content="height= device-height; width: device-width; user-scalable=0;" />  <!-- Usado para dispositivo mobile-->
+      <script type="text/javascript" src="HairDresserManager.js" ></script>
+	  <link rel="stylesheet" href="EstiloNoturnoSimples.css">
+	  
+	
+    <!-- Exemplo de adaptação para aparelhos de diferentes pixels
+	<link media="only screen and (max-device-width: 480px)" href="small.css" type="text/css" rel="stylesheet" />
+    <link media="only screen and (min-device-width: 481px)" href="large.css" type="text/css" rel="stylesheet" />
+	-->  
+	  
+      <title>Hair Dresser Manager</title>	  
+   <style>
+	</style>      
+   </head>
+   <!--<body onload="window.scrollTo(0, 1);" -->   <!-- Em tempo de desevolvimento não permite a exibição da barra de endereços-->
+   <body onload="onInit()" class="yui3-skin-noturno">  
+   
+   <form name="itemForm"> 
+   
+      <div align="left" style="border:1px solid green; width:300px" ; ">
+	     <h3>Agenda de Clientes:</h3>
+    		<p hidden>
+			<label for="CodCliente">CodCliente:</label><input type="text" name="CodCliente" id="CodCliente" size=2 disabled="true"/></p>				
+			<li><input type="text" name="Nome" id="Nome" placeholder="Nome do cliente" size=35 /></li>
+			<li><input type="text" name="Telefone" id="Telefone" placeholder="Numero do celular" size=35 /></li>
+			<p>
+			<div align="center">		
+    		<input type="button" name="create" class="yui3-button" value="Novo" onclick="onCreate()" />
+    		<input type="button" name="update" class="yui3-button" value="Alterar" onclick="onUpdate()" />
+    		<input type="button" name="delete" class="yui3-button" value="Excluir" onclick="onDelete()" />
+			</div>
+			<br>
+            <div id="scrollview" class="yui3-widget yui3-scrollview yui3-scrollview-vert" style="height:200px; overflow-y: scroll; border:1px solid blue;">
+			<div class="yui3-scrollview-content">  			
+			<ul id="itemData" style="cursor:pointer;"></ul>	
+			</div>
+		</div>	
+		<br>
+		<div style="font-weight: bold" align="center" id="status"></div>
+      </form>
+   </body>
+   <script>document.body.style.zoom="110%"</script>
+</html>
