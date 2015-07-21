@@ -1,0 +1,21 @@
+20/Julho
+
+Dar uma olhada no link:
+
+http://www.pubnub.com/blog/customizable-user-presence-data-for-an-ember-js-chat-app/
+ 
+
+21/Julho 
+
+A questão da geração de estimulos usar um timer como recurso, pode ser muito "desgastante"
+para o aparalho mobile.Por hora, apos conclução do prototipo estudar novos metodos 
+para verificação destes estimulos. 
+
+
+
+Ola! Parece que é primeira vez que vc nos consulta, como eu posso lhe chamar ?
+  (Esta mensagem aparece se o sistema ainda não possui o  numero  do usuario)
+
+Que você deseja ?
+
+   

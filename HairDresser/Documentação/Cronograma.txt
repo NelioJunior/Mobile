@@ -1,16 +1,43 @@
-Junho - Estudo e escolha das ferramentas a serem utilizadas.
+Junho -      Estudo e escolha das ferramentas a serem utilizadas.
+             Milestones: (Ñ foi seguido) (Concluído) 
 
-01/Julho - Inicio das atividades de do desenvolvimento.
+Entre 01 -   Analise de requisistos do sistema, levantamendo junto com o cliente.
+e 17/Julho   Desenho do mapa de dados (ER)
+ 
+    Ciclo de processo: Avaliar Prototipo junto com Analista de Design.  
+    20/Julho Inicio de ciclo de desenvolvimento.
 
-27/Julho - Avaliação do prototipo junto com a especialista em Design.
+             Milestones:
+               20/Julho - Criação deste documento (Concluído).   
+               20/Julho - Definir Phonecap ou App Inventor ?? (Concluído,Phonegap foi o escolhido)      
+               Nota Resolução: 
+                     Como supostamente a transmissão de mensagens, o que é 
+                     prioritário para o desenvolvimento dos sistema é uma 
+                     coisa básica no Phonegap e considerando que as 
+                     implementações realizadas no app inventor são de baixa 
+                     complexidade, podendo ser implemenada rapidamente no 
+                     Phonegap, sera melhor que de agora em diante o 
+                     desenvolvimento seja feito no Phonegap.        
+                     *** Também será estudado uma maneira de reaproveitamento do 
+                         código do App Inventor, se possível.                
 
-01/Agosto - Apresentação  do prototipo (telas "bonecos") juntos ao cliente.
+               22/Julho - Replicação do codigo do App Inventor para o Phonegap
+                          e definições dos layouts das telas (design).
+               27/Julho - Implementar telas com os layouts já prontos.           I
+                                                              
+       27/Julho Final do ciclo.
 
-17/Agosto - Apresentação da versão Beta junto ao cliente.
+28/Julho -   Avaliação do prototipo junto com a especialista em Design.
+             Milestones:                 
 
-31/Agosto - Data de aceite do sistema.
+01/Agosto -  Apresentação  do prototipo (telas "bonecos") juntos ao cliente.
+             Milestones:
+         
+17/Agosto -  Apresentação da versão Beta junto ao cliente.
+             Milestones: 
 
-01/Setembro - Subida para a produção.
+31/Agosto -  Data de aceite do sistema.
+             Milestones:    
 
-
-
+01/Setembro - Subida para a produção (este dia não pode ser alterado).
+              Milestones: 

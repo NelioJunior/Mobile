@@ -1,0 +1,33 @@
+
+Este sistema tem como requisito auxiliar as micros e pequenas empresas, permitindo 
+com que seus clientes marquem sua consulta de modo automatico sem a necessidade 
+de uma secretária ou mesmo sendo utilizado em horarios fora do comercial.
+
+Apesar do nome piloto "HairDresser" o sistema podera auxiliar empresário de varios 
+segmentos como por exemplo:
+
+- Instituto de Beleza e cabelereiras.
+- Taxistas.
+- Pizzaria, restaurante e lanchonetes. 
+- Dentistas.
+- Clinicas, psicologos, fonoadiologos, medicos em geral.
+- Advogados. 
+- Personal treiners 
+- Acompanhantes.
+- Massagistas.
+- Professores particulares.
+- Veterinarios.
+
+Obs: Quando subir no Google play e outras, é bom fazer referência a este
+     publico alvo.
+
+Se for exigencia do empresário, é possivel colocar um flag para que o sistema atenda somente clientes  de uma determinada região.
+
+Quando trabalhando a uma empresa que possue rede/filiais o sistema podera indicar 
+o escritorio/loja mais perto. No caso de taxi o sistema podera indicar o carro 
+mais próximo.
+
+A ideia do  sistema é funcionar como um chat (whatsapp) mas entre aplicativos.
+Quando o aplicativo cliente inicia ele já envia um estimulo (mensagem) para o 
+aplicativo servidor e este já lhe envia uma lista de serviços/produtos a qual a 
+
