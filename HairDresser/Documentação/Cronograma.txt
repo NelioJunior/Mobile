@@ -1,12 +1,16 @@
 Junho -      Estudo e escolha das ferramentas a serem utilizadas.
-             Milestones: (Ñ foi seguido) (Concluído) 
+             Milestones: (Ñ foi seguido) 
+             Status: Concluído
 
 Entre 01 -   Analise de requisistos do sistema, levantamendo junto com o cliente.
 e 17/Julho   Desenho do mapa de dados (ER)
- 
-    Ciclo de processo: Avaliar Prototipo junto com Analista de Design.  
-    20/Julho Inicio de ciclo de desenvolvimento.
+             Status: Concluído
 
+    20/Julho Inicio de tarefa: Preparar Prototipo para avaliação do Analista de Design.  
+             Status: Cancelado 
+                     Nota: Devido ao tempo de estudo do Sencha Touch, vou abolido esta 
+                           tarefa para que não seja impactado o tempo das outras tarefas
+                           deste cronograma.     
              Milestones:
                20/Julho - Criação deste documento (Concluído).   
                20/Julho - Definir Phonecap ou App Inventor ?? (Concluído,Phonegap foi o escolhido)      
@@ -23,13 +27,9 @@ e 17/Julho   Desenho do mapa de dados (ER)
 
                22/Julho - Replicação do codigo do App Inventor para o Phonegap
                           e definições dos layouts das telas (design).
-               27/Julho - Implementar telas com os layouts já prontos.           I
-                                                              
-       27/Julho Final do ciclo.
-
-28/Julho -   Avaliação do prototipo junto com a especialista em Design.
-             Milestones:                 
-
+               27/Julho - Implementar telas com os layouts já prontos.           I                                                              
+    28/Julho Final da tarefa: Avaliação do Analista de Design. 
+             Nota (Nesta versão fazer um design mais "clean" e focar mais da idea de demostrar as                      as funcionalidades para o  cliente, apesar de se tratar apenas de protótipo).                                      
 01/Agosto -  Apresentação  do prototipo (telas "bonecos") juntos ao cliente.
              Milestones:
          
